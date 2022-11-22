@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    color: #4E9F3D;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #191A19;
+    text-shadow: 80px 70px 10px #4E9F3D;
+}
+#home h1{
+    font-size: 6rem;
+    font-family: 'Clicker Script', cursive;
+    font-weight: 900;
+
+}
+
+#home .name p{
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-bottom: -20px;
+    text-shadow: none;
+}
+#home .hello{
+font-size: 4rem;
+margin-bottom: 100px;
+position: absolute;
+animation: anime-hello 3s forwards ease-out;
+}
+
+.name{
+    position: absolute;
+    animation: anime-name 2.5s 3s forwards;
+    opacity: 0;
+}
+
+@keyframes anime-hello {
+    0%{
+          opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes anime-name {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1;
+    }
+}
