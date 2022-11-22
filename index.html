@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <!-- google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- styles.css page link  -->
 
@@ -21,14 +24,47 @@
     <title>Shivam Ivam</title>
   </head>
   <body>
+    <div
+      class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black"
+      style="display: none; z-index: 10"
+      id="leftMenu"
+    >
+      <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">
+        &times;
+      </button>
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="#" class="w3-bar-item w3-button">Time Line</a>
+      <a href="#" class="w3-bar-item w3-button">My projects</a>
+      <a href="#" class="w3-bar-item w3-button">Contact Me</a>
+      <a href="#" class="w3-bar-item w3-button">About Me</a>
+    </div>
+
+    <button
+      class="w3-button w3-xlarge w3-left w3-bar-item"
+      onclick="openLeftMenu()"
+      style="z-index: 9; position: fixed; color: #4e9f3d"
+    >
+      &#9776;
+    </button>
+
     <!-- home page -->
 
     <div class="section" id="home">
-        <p class="hello">Hi!</p>
-      <div class="name ">
-        <p >I'm</p>
+      <p class="hello">Hi!</p>
+      <div class="name">
+        <p>I'm</p>
         <h1>Shivam</h1>
       </div>
     </div>
+
+    <script>
+      function openLeftMenu() {
+        document.getElementById("leftMenu").style.display = "block";
+      }
+
+      function closeLeftMenu() {
+        document.getElementById("leftMenu").style.display = "none";
+      }
+    </script>
   </body>
 </html>

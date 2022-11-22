@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* home  start */  
+
+
 #home{
     display: flex;
     height: 100vh;
@@ -58,4 +63,17 @@ animation: anime-hello 3s forwards ease-out;
     100%{
         opacity:1;
     }
+}
+
+
+/* home finish */
+
+/* navbar start  */
+
+.w3-bar-item{
+    color:#D8E9A8;
+    transition: all .6s;
+}
+.w3-bar-item:hover{
+transform: translateX(20px);
 }
