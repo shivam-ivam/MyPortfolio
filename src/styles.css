@@ -3,23 +3,28 @@
     padding: 0;
 }
 
+/* each section  */
 
+.section{
+    background-image: url(https://getwallpapers.com/wallpaper/full/5/9/d/44273.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* ------------------ */
 /* home  start */  
 
 
 #home{
-    display: flex;
-    height: 100vh;
-    width: 100vw;
     color: #4E9F3D;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    background-color: #191A19;
-    background-image: url(https://getwallpapers.com/wallpaper/full/5/9/d/44273.jpg);
-    background-size: cover;
-    background-position: center;
+    /* background-color: #191A19; */
 }
 #home h1{
     font-size: 5rem;
@@ -76,4 +81,79 @@ animation: anime-hello 3s forwards ease-out;
 }
 .w3-bar-item:hover{
 transform: translateX(20px);
+}
+
+/* about page  */
+
+#about{
+    color: white;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+.about-cont{
+    position: relative;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    padding: 50px;
+}
+.about-content-cont{
+        border: 2px solid white;
+        box-shadow: 0 0 100px rgba(255, 255, 255, 0.308);
+        background-color: rgba(0, 0, 0, 0.534);
+}
+.about-pic-content{
+    font-family:'Great Vibes', cursive;
+    font-size: 5.5rem;
+}
+.about-pic-cont::after{
+    content: "";
+    position: absolute;
+    border: 5px solid #D8E9A8;
+    bottom: 5%;
+    right: -5%;
+    width: 110%;
+    height: 90%;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.308);
+    animation: anime-about-pic-cont-before 6s infinite linear forwards;
+}
+.about-pic-cont::before{
+    content: "";
+    position: absolute;
+    border: 5px solid #D8E9A8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.267);
+    animation: anime-about-pic-cont-before 6s infinite linear forwards;
+}
+@keyframes anime-about-pic-cont-before {
+    0%{
+    rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@media screen and (max-width:800px) {
+    #about{
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        background-size: cover;
+        height: auto;
+    }
+    .about-cont{
+        width: auto;
+        max-width: 90%;
+        height: auto;
+        padding: 50px;
+        margin: 70px;
+    }
+    .about-pic-content{
+        font-size: 3.4rem;
+    }
 }
