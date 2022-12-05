@@ -6,8 +6,8 @@
 /* each section  */
 
 .section{
-    background-image: url(https://getwallpapers.com/wallpaper/full/5/9/d/44273.jpg);
-    background-size: cover;
+    background-image: url(https://mcdn.wallpapersafari.com/medium/82/56/rJVLPb.jpg);
+    background-size: contain;
     background-position: center;
     display: flex;
     height: 100vh;
@@ -88,6 +88,8 @@ transform: translateX(20px);
 #about{
     color: white;
     /* flex-direction: column; */
+    background-image: url(https://mcdn.wallpapersafari.com/medium/94/4/bUMgdH.jpg);
+    background-size: contain;
     justify-content: space-around;
     align-items: center;
 }
@@ -97,11 +99,13 @@ transform: translateX(20px);
     max-width: 50%;
     height: auto;
     padding: 50px;
+ 
 }
 .about-content-cont{
         border: 2px solid white;
-        box-shadow: 0 0 100px rgba(255, 255, 255, 0.308);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.13);
         background-color: rgba(0, 0, 0, 0.534);
+
 }
 .about-pic-content{
     font-family:'Great Vibes', cursive;
@@ -110,24 +114,25 @@ transform: translateX(20px);
 .about-pic-cont::after{
     content: "";
     position: absolute;
-    border: 5px solid #D8E9A8;
+    border: 5px solid white;
     bottom: 5%;
     right: -5%;
     width: 110%;
     height: 90%;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.308);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.123);
     animation: anime-about-pic-cont-before 6s infinite linear forwards;
 }
 .about-pic-cont::before{
     content: "";
     position: absolute;
-    border: 5px solid #D8E9A8;
+    border: 5px solid white;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 100px rgba(255, 255, 255, 0.267);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.151);
     animation: anime-about-pic-cont-before 6s infinite linear forwards;
+
 }
 @keyframes anime-about-pic-cont-before {
     0%{
@@ -143,7 +148,7 @@ transform: translateX(20px);
         flex-direction: column;
         justify-content: center;
         align-content: space-around;
-        background-size: cover;
+        background-size: contain;
         height: auto;
     }
     .about-cont{
@@ -151,7 +156,7 @@ transform: translateX(20px);
         max-width: 90%;
         height: auto;
         padding: 50px;
-        margin: 70px;
+        margin: 70px 0;
     }
     .about-pic-content{
         font-size: 3.4rem;
