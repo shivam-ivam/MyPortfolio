@@ -9,3 +9,9 @@ function openLeftMenu() {
   }
 
 // -------------------------------
+
+// contact drop down 
+
+function contactDrop(){
+  document.querySelector(".contact-drop-box").classList.toggle("drop-down");
+}

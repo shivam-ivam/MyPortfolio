@@ -17,6 +17,13 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome kit link  -->
+
+    <script
+      src="https://kit.fontawesome.com/19aaf3699f.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- styles.css page link  -->
 
     <link rel="stylesheet" href="./src/styles.css" />
@@ -47,7 +54,7 @@
     >
       &#9776;
     </button>
-  <!-- ---------------------------- -->
+    <!-- ---------------------------- -->
     <!-- home section -->
 
     <div class="section" id="home">
@@ -56,6 +63,46 @@
         <p>I'm</p>
         <h1>Shivam</h1>
       </div>
+      <hr>
+    </div>
+    <!-- ---------------------------- -->
+    <!-- contact page  -->
+    <div id="contact" class="section">
+      <div class="contact-interior-container-1 contact-interior-container">
+        <div class="contact-interior-contact-info-container">
+          <h4>Contact info</h4>
+          <li><i class="fa-sharp fa-solid fa-phone"></i>ivamanonymous@gmail.com
+          </li>
+          <li><i class="fa-sharp fa-solid fa-location-dot"></i>Gaya, Bihar, India</li>
+        </div>
+        <div class="contact-interior-follow-me-container">
+          <h4>Follow me</h4>
+          <li>
+            <i class="fa-brands fa-instagram"></i><a href="">Instagram</a>
+          </li>
+          <li><i class="fa-brands fa-github"></i><a href="">Github</a></li>
+          <li><i class="fa-brands fa-linkedin"></i><a href="">Linkedin</a></li>
+          <li><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></li>
+          <li><i class="fa-brands fa-youtube"></i><a href="">Youtube</a></li>
+        </div>
+      </div>
+      <div
+        class="contact-interior-container-2 contact-interior-container">
+        <div class="contact-interior-drop-container">
+          <h4 class="pop-up-anime" onclick="contactDrop()">Drop A Message!</h4>
+          <div class="contact-drop-box">
+            <form action="" method="post">
+            <label for="input-name">Name</label>
+            <input type="text" name="name" id="input-name">
+            <label for="input-email">Email</label>
+            <input type="email" name="emai" id="input-email">
+            <label for="input-msg">Drop a Message</label>
+            <textarea rows="" cols="" id="input-msg"></textarea>
+            <button type="submit" class="btn submit-btn">Drop</button>
+          </form>
+          </div>
+        </div>
+    </div>
     </div>
     <script src="./src/script.js"></script>
   </body>
