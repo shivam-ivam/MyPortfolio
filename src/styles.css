@@ -227,8 +227,8 @@ font-size: 3rem;
 font-family: 'Clicker Script', cursive;
 letter-spacing: 2px;
 font-weight: 900;
-/* border: 2px solid white; */
-/* height: 70px; */
+padding: 0;
+width: auto;
 height: auto;
 margin-left: 25px;
 text-align: left;
@@ -319,8 +319,62 @@ margin-bottom: 5px;
 @media  screen and (max-width:600px) {
         .contact-interior-container-1{
             flex-direction: column;
-            /* margin-left: 20px; */
+        }
+        .contact-drop-box form{
+            padding: 0;
         }
 }
 
+/* ---------- contact page end -------- */
+
+/* -------------- time line page ---------- */
+
+#timeline{
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.timeline-h-1{
+    color: #4E9F3D;
+    margin: 40px;
+}
+.timeline-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    justify-content: space-around;
+}
+.timeline-card{
+    box-shadow: 0 0 10px #4E9F3D;
+    width: 160px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 25px 20px 25px;
+    transition: height 1s;
+    overflow: hidden;
+}
+.timeline-time{
+    color: #4E9F3D;
+    margin-left: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.timeline-card-para{
+    font-size: .8rem;
+    margin: 10px 0;
+}
+.timeline-card-detail-para{
+    font-size: .8rem;
+    margin-top: 30px;
+}
+.timeline-card:hover{
+  width: 300px;
+  height: 300px;
+
+}
+@media  screen and (max-width:700px) {
+    .timeline-card{
+        margin: 0 10px 20px 10px;
+    }
+}
 
