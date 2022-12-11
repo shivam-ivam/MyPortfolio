@@ -106,9 +106,7 @@ transform: translateX(20px);
 
 #about{
     color: white;
-    /* flex-direction: column; */
-    background-image: url(https://mcdn.wallpapersafari.com/medium/94/4/bUMgdH.jpg);
-    background-size: contain;
+
     justify-content: space-around;
     align-items: center;
 }
@@ -118,39 +116,39 @@ transform: translateX(20px);
     max-width: 50%;
     height: auto;
     padding: 50px;
- 
 }
 .about-content-cont{
-        border: 2px solid white;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.13);
-        background-color: rgba(0, 0, 0, 0.534);
-
+    box-shadow: 0 0 30px #4E9F3D;
+    background-color: rgba(0, 0, 0, 0.534);
 }
+
 .about-pic-content{
     font-family:'Great Vibes', cursive;
     font-size: 5.5rem;
 }
+.about-content-cont h1{
+    color: #4E9F3D;
+    font-weight: 700;
+}
 .about-pic-cont::after{
     content: "";
     position: absolute;
-    border: 5px solid white;
     bottom: 5%;
     right: -5%;
     width: 110%;
     height: 90%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.123);
-    animation: anime-about-pic-cont-before 6s infinite linear forwards;
+    box-shadow: 0 0 20px #4E9F3D;
+    animation: anime-about-pic-cont-before 8s infinite linear forwards;
 }
 .about-pic-cont::before{
     content: "";
     position: absolute;
-    border: 5px solid white;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.151);
-    animation: anime-about-pic-cont-before 6s infinite linear forwards;
+    box-shadow: 0 0 20px #4E9F3D;
+    animation: anime-about-pic-cont-before 8s infinite linear forwards;
 
 }
 @keyframes anime-about-pic-cont-before {
@@ -163,7 +161,7 @@ transform: translateX(20px);
 }
 @media screen and (max-width:800px) {
     #about{
-        color: white;
+
         flex-direction: column;
         justify-content: center;
         align-content: space-around;
@@ -182,6 +180,7 @@ transform: translateX(20px);
     }
     .about-pic-content{
         font-size: 3.4rem;
+
     }
 }
 /* about page end  */
@@ -206,6 +205,10 @@ height: auto;
 color: #4E9F3D;
 margin: 20px;
 font-size: 1.5rem;
+}
+.contact-interior-container-1{
+    margin-top: 100px;
+    margin-inline: auto;
 }
 .contact-interior-container-1 h4{
 color: #4E9F3D;
@@ -310,11 +313,14 @@ margin-bottom: 5px;
         
         }
         .contact-interior-container-2{
-            margin-left: 150px;
+            width: auto;
         }
 }
 @media  screen and (max-width:600px) {
         .contact-interior-container-1{
             flex-direction: column;
+            /* margin-left: 20px; */
         }
 }
+
+
