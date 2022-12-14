@@ -327,8 +327,44 @@ margin-bottom: 5px;
 
 /* ---------- contact page end -------- */
 
+
+
+
 /* -----------------------skills page start  -------------------------*/
 
+#skills{
+    flex-direction: column;
+    align-items: center;
+}
+.skills-h-1{
+    margin: 50px;
+    color: #4E9F3D;
+}
+.skills-container{
+    width: 95vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills-type{
+    margin: 30px;
+    width: 240px;
+    color: #D8E9A8;
+}
+.star{
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+.star-container{
+    margin-left: 10px;
+}
+.neg-star{
+    color: rgb(86, 104, 89);
+}
+.pos-star{
+color: #4dbe36;
+}
 
 
 
