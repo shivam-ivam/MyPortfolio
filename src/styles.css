@@ -323,6 +323,10 @@ margin-bottom: 5px;
         .contact-drop-box form{
             padding: 0;
         }
+        .contact-interior-container-2{
+            margin-left:-30px ;
+        }
+
 }
 
 /* ---------- contact page end -------- */
@@ -372,8 +376,9 @@ color: #4dbe36;
 /*----------------------- skills page end --------------- */
 
 
-
 /* -------------- time line page ---------- */
+
+
 
 #timeline{
     align-items: center;
@@ -386,54 +391,73 @@ color: #4dbe36;
 .timeline-container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 20px; 
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .timeline-subtitle{
     color:#D8E9A8;
     margin-bottom: 40px;
     font-size: 1.3rem;
     font-family: cursive;
+}
+.mySlides {
+    display:none;
+    width:800px;
+    height: 400px;
+}
+.mySlide-interior{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.timeline-date{
+color: #4E9F3D;
+font-size: 1.6rem;
+font-family: 'Courier New', Courier, monospace;
+}
+.mySlide-title{
+color: #D8E9A8;
+font-family: cursive;
+color: #D8E9A8;
+margin-bottom: 50px;
+}
+.mySlide-content{
+    padding-inline: 100px;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
 
-}
-.timeline-card{
-    box-shadow: 0 0 10px #4E9F3D;
-    width: 160px;
-    height: 100px;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 0 25px 20px 25px;
-    transition: height 1s;
-    overflow: hidden;
-}
-.timeline-time{
-    color: #4E9F3D;
-    margin-left: 35px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.timeline-card-para{
-    font-size: .8rem;
-    margin: 10px 0;
-}
-.timeline-card-detail-para{
-    font-size: .8rem;
-    margin-top: 30px;
-}
-.timeline-card-colapse-work{
-    cursor: pointer;
-    color: #4dbe36;
-    margin-left: 15px;
-}
-.timeline-card-uncolapse{
-  width: 300px;
-  height: 300px;
-}
+
 @media  screen and (max-width:700px) {
-    .timeline-card{
-        margin: 0 10px 20px 10px;
-        width: 160px;
-        height: 100px;
+    .mySlides {
+        width:400px;
+        height: 300px;
     }
+    .timeline-date{
+        color: #4E9F3D;
+        font-size: 1rem;
+        }
+        .mySlide-title{
+font-size: 1rem;
+            }
+            .mySlide-content{
+                font-size: .9rem;
+            }
+}
+
+@media  screen and (max-width:900px) and (min-width:700px){
+    .mySlides {
+        width:600px;
+        height: 400px;
+    }
+    .mySlide-content{
+        padding-inline: 40px;
+    }
+
 }
 
