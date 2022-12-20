@@ -344,7 +344,67 @@ margin-bottom: 5px;
 
 /* ---------- contact page end -------- */
 
+/* ----------- projects  page styling------------------ */
+#projects{
+    flex-direction: column;
+    align-items: center;
+}
+.projects-h-1{
+    margin: 50px;
+    color: #4E9F3D;
+}
+.projects-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+
+ /* card flip  */
+.project-card{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    perspective: 800px;
+}
+.project-card-back{
+   background-color: grey;
+   width: 100%;
+   position: absolute;
+   height: 100%;
+   rotate: 0 1 0 90deg;
+}
+.project-card-front{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    transition: all 1s;
+}
+.flip-front-card{
+    animation: flip-card 1s forwards;
+}
+.flip-back-card{
+    animation: flip-card 1s forwards reverse;
+}
+
+@keyframes flip-card {
+    0%{
+        rotate: 0 0 0 90deg;
+    }
+    100%{
+        rotate: 0 1 0 90deg;
+    }
+    
+}
+/* card flip end */
+
+
+
+
+/* ------------------projects page ending----------------- */
 
 
 /* -----------------------skills page start  -------------------------*/
@@ -387,9 +447,23 @@ margin-bottom: 5px;
     font-size: 1.3rem;
 }
 .skill-card-list-item{
-    /* list-style: none; */
     width: 50%;
     margin: 10px 0px;
+    font-size: .8rem;
+}
+@media  screen and (max-width:426px) {
+    .skill-card-title{
+        color: #ffde59;
+        font-size: .9rem;
+    }
+    .skill-card-list-item{
+        font-size: .7rem;
+    }
+    .skill-card{
+        min-width: 370px ;
+        margin: 10px;
+        padding: 5px 5px;
+    }
 }
 
 
@@ -453,6 +527,7 @@ margin-bottom: 50px;
 }
 .mySlide-content{
     padding-inline: 100px;
+    font-size: .9rem;
 }
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
@@ -460,7 +535,7 @@ margin-bottom: 50px;
 
 @media  screen and (max-width:700px) {
     .mySlides {
-        width:400px;
+        width:370px;
         height: 300px;
     }
     .timeline-date{
@@ -473,6 +548,9 @@ font-size: 1rem;
             .mySlide-content{
                 font-size: .7rem;
                 padding-inline: 30px;
+            }
+            .timeline-container{
+
             }
             
 }

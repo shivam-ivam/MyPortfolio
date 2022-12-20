@@ -50,3 +50,11 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+
+
+// ------------ projects section 
+
+function flip_card(params) {
+  document.querySelectorAll(".project-card-front")[params].classList.toggle("flip-front-card");
+  document.querySelectorAll(".project-card-back")[params].classList.toggle("flip-back-card");
+}
