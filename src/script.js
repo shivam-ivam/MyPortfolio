@@ -54,7 +54,11 @@ function showDivs(n) {
 
 // ------------ projects section 
 
-function flip_card(params) {
-  document.querySelectorAll(".project-card-front")[params].classList.toggle("flip-front-card");
-  document.querySelectorAll(".project-card-back")[params].classList.toggle("flip-back-card");
+function flip_front_card(params) {
+  document.querySelectorAll(".project-card-front")[params].style.transform = "rotatey(90deg)";
+  document.querySelectorAll(".project-card-back")[params].style.transform = "rotatey(0deg)";
+}
+function flip_back_card(params) {
+  document.querySelectorAll(".project-card-front")[params].style.transform = "rotatey(0deg)";
+  document.querySelectorAll(".project-card-back")[params].style.transform = "rotatey(90deg)";
 }
