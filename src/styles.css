@@ -365,51 +365,87 @@ margin-bottom: 5px;
 .project-card-image{
     width: 100%;
     height: 100%;
-}
- /* card flip  */
-.project-card{
-    width: 350px;
-    height: 350px;
-    margin: 20px 10px;
-    position: relative;
-    perspective: 800px;
-    transition: scale .5s;
-}
-.project-card:hover{
-    scale: 1.05;
-    transition: scale .5s;
-}
-.project-card-back{
-   background-color: grey;
-   width: 100%;
-   position: absolute;
-   height: 100%;
-   transition: all .5s;
-   transform: rotatey(90deg);
-}
-.project-card-front{
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    transition: all .5s;
-    transform: rotatey(0);   
+    border-radius: 10px;
 }
 
-@keyframes flip-card {
-    0%{
-        rotate: 0 0 0 90deg;
-    }
-    100%{
-        rotate: 0 1 0 90deg;
-    }
-    
+.flip-card-back{
+    padding: 30px;
 }
+.project-card-title{
+    color: #ffde59;
+    font-size: 1.3rem;
+}
+.project-card-sub-title{
+    color: #d4c37d;
+    font-size: .9rem;
+}
+.project-card-content{
+    font-size: .9rem;
+    margin: 30px 0;
+}
+.project-card-content li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.project-card-content a{
+    text-decoration: none;
+    color: #e7dfbf;
+}
+
+
+/* flipcard  */
+
+.project-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .project-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:#d8e9a81f;
+    color: white;
+    transform: rotateY(180deg);
+  }
 /* card flip end */
+
 @media  screen and (max-width:900px) {
 .project-card{
     width: 300px;
     height: 300px;
+}
+.projects-container{
+    flex-wrap: wrap-reverse;
 }
 }
 
