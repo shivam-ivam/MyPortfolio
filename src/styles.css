@@ -114,7 +114,7 @@ height: 100vh;
       .home-mypic img {
       height: 100vh;
       position: absolute;
-      right: 100px;
+      right: 20px;
       }
       .home-inner {
         display:contents;
@@ -145,10 +145,7 @@ height: 100vh;
         font-size: 3rem;
 
       }
-      
-      .name {
-
-      }
+  
     
 }
 /* home finish */
